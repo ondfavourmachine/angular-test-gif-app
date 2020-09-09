@@ -1,0 +1,13 @@
+.modified-p span {
+    display: block;
+    color: black;
+}
+
+.modified-p a {
+    cursor: pointer;
+    color: green !important;
+}
+
+.modified-p a:visited {
+    color: blue;
+}

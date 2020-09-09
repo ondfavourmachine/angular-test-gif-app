@@ -1,0 +1,42 @@
+<div>
+    <!-- Implement result list here -->
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush" style="width: 30rem">
+            <li class="list-group-item" style="border: none; color: black;">
+                Gif url: {{ searchservice.individualGif?.bitly_gif_url }}
+            </li>
+            <li class="list-group-item" style="border: none; color: black;">
+                Embedded url: {{ searchservice.individualGif?.embed_url }}
+            </li>
+            <li class="list-group-item " style="border: none; color: black;">
+                id: {{ searchservice.individualGif?.id }}
+            </li>
+            <li class="list-group-item " style="border: none; color: black;">
+                date:
+                {{
+                    searchservice.individualGif?.import_datetime
+                        | date: "mediumDate"
+                }}
+            </li>
+            <li class="list-group-item" style="border: none; color: black;">
+                slug: {{ searchservice.individualGif?.slug }}
+            </li>
+            <li class="list-group-item " style="border: none; color: black;">
+                title: {{ searchservice.individualGif?.title }}
+            </li>
+            <li class="list-group-item " style="border: none; color: black;">
+                type: {{ searchservice.individualGif?.type }}
+            </li>
+            <li class="list-group-item " style="border: none; color: black;">
+                url: {{ searchservice.individualGif?.url }}
+            </li>
+            <li class="list-group-item " style="border: none; color: black;">
+                analytics_response_payload:
+                {{ searchservice.individualGif?.analytics_response_payload }}
+            </li>
+        </ul>
+        <!-- <div class="card-footer">
+              Card footer
+            </div> -->
+    </div>
+</div>
